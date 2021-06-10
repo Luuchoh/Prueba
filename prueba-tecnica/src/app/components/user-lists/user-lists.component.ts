@@ -23,9 +23,10 @@ export class UserListsComponent implements OnInit {
       }else{
         this.user = []
       }
-      console.log(results);
       
     })
+    console.log(this.user);
+    
 
   }
 }

@@ -3,7 +3,7 @@ export interface Api {
     name: string,
     username: string,
     email: string,
-    addres: {
+    address: {
         street: string,
         suite: string,
         city: string,
