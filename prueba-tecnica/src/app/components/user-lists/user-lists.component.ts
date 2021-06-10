@@ -25,7 +25,6 @@ export class UserListsComponent implements OnInit {
       }
       
     })
-    console.log(this.user);
     
 
   }

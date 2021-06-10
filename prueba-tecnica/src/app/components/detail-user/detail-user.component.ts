@@ -22,10 +22,8 @@ userApi:Observable<Api> | undefined
         this.userApi = this.api.getOneUser(id);
         this.api.getOneUser(id)
           .subscribe(results =>{
-            console.log(results);
 
           this.user = results;
-          console.log(this.user);
 
         })
         
