@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Api } from 'src/app/interfaces/api';
+import { ApiService } from "./../../services/api.service";
 
 @Component({
   selector: 'app-user-lists',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserListsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private api: ApiService) { }
+  user: Api[] = [];
   ngOnInit(): void {
+    this.getAllUser();
   }
 
+  getAllUser(){
+    this.api.getAllUser()
+    .subscribe(results=>{
+      if(results){
+      this.user = [...results];
+      }else{
+        this.user = []
+      }
+      console.log(results);
+      
+    })
+
+  }
 }

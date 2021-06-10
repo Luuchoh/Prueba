@@ -1,0 +1,19 @@
+body{
+    padding-top:30px;
+}
+
+#img img {
+    display: block;  
+    width: 200px;
+    height: 200px;
+}
+
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
+}
+
+span{
+    display: inline-block;
+}

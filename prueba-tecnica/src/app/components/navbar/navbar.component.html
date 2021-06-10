@@ -2,8 +2,7 @@
     <div class="container-fluid">
       <a class="navbar-brand">API JSON placeholer</a>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-dark" type="submit" onclick="">Search</button>
+        <input #inputSearch class="form-control me-2" type="search" placeholder="Search" aria-label="Search" (keyup) = "onSearch(inputSearch.value)">
       </form>
     </div>
   </nav>
